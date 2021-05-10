@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "201784048214",
+    "firebase_url": "https://pixil-250708.firebaseio.com",
+    "project_id": "pixil-250708",
+    "storage_bucket": "pixil-250708.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201784048214:android:016587d2553db0f3cb99f7",
+        "android_client_info": {
+          "package_name": "com.app.pixil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "201784048214-siiunm4sgnsqg848ttumph793o0vddlf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5af5ztNZOhNBf2QgpC34pPvmvT79zjU4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "201784048214-siiunm4sgnsqg848ttumph793o0vddlf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "201784048214-62ca5engq6vrttbj8i7hdsv95nvff2gl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ankhbayar.Pixil"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

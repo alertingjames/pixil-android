@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:id="@+id/activity"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".main.AddShippingAddressActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_gravity="bottom"
+        android:tint="@color/white_tint"
+        android:src="@drawable/bgshipping"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:onClick="back"
+                android:src="@drawable/ic_back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_address"
+                android:textColor="@color/text"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:onClick="submit"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="15dp"/>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ship_to"
+                android:textColor="@color/text"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/blue_stroke_white_rect"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:hint="@string/full_name"
+                    android:textColor="@color/text"
+                    android:textSize="16sp"
+                    android:singleLine="true"
+                    android:inputType="textCapWords"
+                    android:background="@null"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/text"
+                android:hint="@string/phone_number"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:background="@drawable/blue_stroke_white_rect"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/blue_stroke_white_rect"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_address"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@color/text"
+                    android:textSize="16sp"
+                    android:background="@null"
+                    android:hint="@string/address_line"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:padding="10dp"
+                android:textColor="@color/text"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:hint="@string/distric_line"
+                android:background="@drawable/blue_stroke_white_rect"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_city"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@color/text"
+                    android:textSize="16sp"
+                    android:hint="@string/city"
+                    android:inputType="textCapWords"
+                    android:singleLine="true"
+                    android:background="@drawable/blue_stroke_white_rect"/>
+
+                <EditText
+                    android:id="@+id/edt_zipcode"
+                    android:layout_width="0px"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@color/text"
+                    android:textSize="16sp"
+                    android:inputType="number"
+                    android:hint="@string/zipcode"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+                    android:background="@drawable/blue_stroke_white_rect"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_province"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:padding="10dp"
+                android:textColor="@color/text"
+                android:textSize="16sp"
+                android:hint="@string/province"
+                android:singleLine="true"
+                android:background="@drawable/blue_stroke_white_rect"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/loading_bar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:indicator="LineScaleParty"
+        app:indicator_color="#F53700" />
+
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

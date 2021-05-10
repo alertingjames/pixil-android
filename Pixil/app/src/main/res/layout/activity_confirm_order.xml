@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:id="@+id/activity"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".main.ConfirmOrderActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_gravity="bottom"
+        android:tint="@color/white_tint"
+        android:src="@drawable/bgshipping"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:onClick="back"
+                android:src="@drawable/ic_back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_confirmation"
+                android:textColor="@color/text"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pixils_"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/pixils"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/text"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/shipping_address_"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textColor="@color/text"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="James John"
+                android:textColor="@color/text"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="+1234567890"
+                android:textColor="@color/text"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="52 Olive Drive Marysville, OH 43040"
+                android:textColor="@color/text"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/distric_line"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textColor="@color/text"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/district"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="52 Olive Drive Marysville, OH 43040"
+                android:textColor="@color/text"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/city"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Marysville"
+                    android:textColor="@color/text"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/zipcode"
+                    android:visibility="gone"
+                    android:textColor="@color/text"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/zipcode"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="OH 43040"
+                    android:textColor="@color/text"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/province"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textColor="@color/text"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/province"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="52 Olive Drive Marysville, OH 43040"
+                android:textColor="@color/text"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/estimated_delivery_date_"
+                android:textStyle="bold"
+                android:textColor="@color/text"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="August 26, 2019"
+                android:textColor="@color/text"
+                android:textSize="16sp"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/text"
+                        android:text="@string/pixilset"/>
+                    <TextView
+                        android:id="@+id/pixilset"
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/text"
+                        android:padding="5dp"
+                        android:text="3"/>
+                    <TextView
+                        android:id="@+id/pixilsetprice"
+                        android:layout_width="0px"
+                        android:layout_weight="0.6"
+                        android:textSize="14sp"
+                        android:textColor="@color/text"
+                        android:gravity="center"
+                        android:text="$50,000"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/text"
+                        android:text="@string/additionalpixils"/>
+                    <TextView
+                        android:id="@+id/additionalset"
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/text"
+                        android:padding="5dp"
+                        android:text="2"/>
+                    <TextView
+                        android:id="@+id/additionalsetprice"
+                        android:layout_width="0px"
+                        android:layout_weight="0.6"
+                        android:textSize="14sp"
+                        android:textColor="@color/text"
+                        android:gravity="center"
+                        android:text="$30,000"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/text"
+                        android:text="@string/shipping"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/text"
+                        android:padding="5dp"
+                        android:visibility="invisible"
+                        android:text="3"/>
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_weight="0.6"
+                        android:textSize="14sp"
+                        android:textColor="@color/text"
+                        android:gravity="center"
+                        android:text="@string/free"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/text"
+                        android:text="@string/total"/>
+                    <TextView
+                        android:id="@+id/total"
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/text"
+                        android:padding="5dp"
+                        android:text="5"/>
+                    <TextView
+                        android:id="@+id/totalprice"
+                        android:layout_width="0px"
+                        android:layout_weight="0.6"
+                        android:textSize="14sp"
+                        android:textColor="@color/text"
+                        android:gravity="center"
+                        android:text="$80,000"/>
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/blue_round_fill"
+                android:textAllCaps="false"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/complete_order"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:id="@+id/orderButton"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/white_rect_shadow"
+        android:padding="50dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/progressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="%"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimary"/>
+            </LinearLayout>
+        </FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/uploading"
+            android:textColor="#5e5e5e"
+            android:paddingBottom="10dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/loading_bar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:indicator="LineScaleParty"
+        app:indicator_color="#F53700" />
+
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

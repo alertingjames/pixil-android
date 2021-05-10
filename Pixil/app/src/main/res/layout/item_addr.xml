@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rowTextView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:textColor="#202020"
+    android:layout_margin="8dp"
+    android:text="7 RD Mirada Colorado Springs, USA"
+    android:background="@drawable/blue_stroke_white_rect"
+    android:textSize="14sp" >
+</TextView>

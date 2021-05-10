@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.SelectPhotosActivity"
+    android:keepScreenOn="true">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+        <include
+            layout="@layout/photos_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <softpro.naseemali.ShapedNavigationView
+            android:id="@+id/navigation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            app:drawerShape="roundedRect"
+            android:fitsSystemWindows="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/menu_bg"
+                android:paddingLeft="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:padding="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/logo_110"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/app_name"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu1"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:onClick="toMyOrders"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu2"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:onClick="toQuestions"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu3"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:onClick="toContactUs"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu4"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:onClick="toSettings"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu5"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:onClick="toLegal"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu6"
+                    android:gravity="center_vertical"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:layout_marginTop="50dp"
+                    android:onClick="toAddPromo"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </softpro.naseemali.ShapedNavigationView>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
